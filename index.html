@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irtaza Hassan - Gamer CV</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Animated background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle, rgba(0,255,150,0.2), transparent 70%) repeat;
+      background-size: 200px 200px;
+      animation: pulse 6s infinite alternate;
+      z-index: -2;
+    }
+    @keyframes pulse { 0%{transform:scale(1);opacity:0.6}100%{transform:scale(1.2);opacity:0.8} }
+
+    /* Container */
+    .container {
+      display: flex;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Left Side */
+    .left-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .left-side img {
+      width: 180px;
+      border-radius: 50%;
+      border: 3px solid #00ff9f;
+      box-shadow: 0 0 25px #00ff9f44;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg,#00ff9f,#00b36b);
+      color:#0a0a0a;
+      font-weight:bold;
+      border-radius:8px;
+      text-decoration:none;
+      box-shadow:0 0 15px #00ff9f66;
+      transition: all 0.3s ease;
+    }
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow:0 0 25px #00ff9fcc;
+    }
+
+    /* Right Side */
+    .right-side {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Section cards */
+    section {
+      background: rgba(20,20,20,0.85);
+      border:1px solid #00ff9f44;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 0 15px rgba(0,255,159,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow:0 0 25px rgba(0,255,159,0.4);
+    }
+
+    h3 {
+      color:#00ff9f;
+      margin-bottom:10px;
+      border-bottom:1px solid #00ff9f55;
+      padding-bottom:5px;
+      text-shadow:0 0 5px #00ff9f;
+    }
+
+    ul {
+      list-style:none;
+      padding-left:0;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    ul li {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background: rgba(0,255,159,0.05);
+      border:1px solid #00ff9f44;
+      border-radius:8px;
+      padding:8px 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    ul li:hover {
+      transform: translateY(-3px);
+      box-shadow:0 0 25px rgba(0,255,159,0.3);
+    }
+
+    ul li a {
+      background:#00ff9f;
+      color:#0a0a0a;
+      padding:6px 12px;
+      border-radius:6px;
+      font-weight:bold;
+      text-decoration:none;
+      transition:0.3s;
+    }
+    ul li a:hover { background:#00b36b; color:#fff; }
+
+    /* Contact Icons */
+    .contact p { margin-bottom:6px; }
+    
+    /* Skills bars */
+    .skill-bar {
+      background:#111;
+      border-radius:6px;
+      overflow:hidden;
+      margin-bottom:10px;
+    }
+    .skill-bar div {
+      height:12px;
+      background:#00ff9f;
+      width:0%;
+      transition: width 1s;
+    }
+
+    /* Responsive */
+    @media(max-width:800px){
+      .container { flex-direction:column; align-items:center; }
+      .right-side { width:100%; }
+      ul li { flex-direction:column; gap:5px; align-items:flex-start; }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE -->
+  <div class="left-side">
+    <img src="irtaza.png" alt="Irtaza Hassan">
+    <a href="Irtaza_Hassan_Resume.pdf" download class="download-btn">Download Resume</a>
+
+    <section class="contact">
+      <h3>Contact</h3>
+      <p>📞 0303 7872480</p>
+      <p>📍 Chak # 2/10-L Harappa</p>
+      <p>📧 <a href="mailto:irtazahassan460@gmail.com">irtazahassan460@gmail.com</a></p>
+      <p>🔗 <a href="https://linkedin.com/in/irtaza-hassan-236b40251">LinkedIn</a></p>
+    </section>
+
+    <section class="skills">
+      <h3>Skills</h3>
+      <div class="skill-bar"><div style="width:90%"></div></div> 🎮 Game Development
+      <div class="skill-bar"><div style="width:85%"></div></div> 💻 C#
+      <div class="skill-bar"><div style="width:80%"></div></div> 🕹 Unity
+    </section>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+    <section class="profile">
+      <h3>Profile</h3>
+      <p>Recent Computer Science graduate with a strong passion for game development, 
+      specializing in Unity and C#. Proficient in building 2D/3D gameplay mechanics, UI 
+      systems, and interactive features. Eager to join a creative team and grow as a game developer.</p>
+    </section>
+
+    <section class="education">
+      <h3>Education</h3>
+      <ul>
+        <li><b>BS Computer Science</b>, University of Sahiwal (2021–2025)</li>
+        <li><b>FSc</b>, Punjab College Sahiwal (2018–2020)</li>
+        <li><b>Matric</b>, HTM Secondary School (2016–2018)</li>
+      </ul>
+    </section>
+
+    <section class="certifications">
+      <h3>Certifications</h3>
+      <ul>
+        <li><b>Unity Essentials Pathway</b> <a href="https://www.credly.com/badges/3a469635-b457-4eb8-9ee4-fe522a91b6e1/public_url" target="_blank">View Certificate</a></li>
+        <li><b>Unity Junior Programmer</b> <a href="https://www.credly.com/badges/2c368984-ce37-428d-849f-cd3c04336006/public_url" target="_blank">View Certificate</a></li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li><b>Football Challenge</b> <a href="https://play.unity.com/en/games/6516982c-cb9c-4a04-8184-f16153a21078/football-challenge" target="_blank">Play Now</a></li>
+        <li><b>Sky Arena: Football Clash</b> <a href="https://play.unity.com/en/games/7e093610-184e-4eac-af46-419ade582db5/sky-areana-football-clash" target="_blank">Play Now</a></li>
+        <li><b>Clicky Crates</b> <a href="https://play.unity.com/en/games/1b446c58-9a8c-4c0a-9d1e-9f01a14cf43c/clicky-crates" target="_blank">Play Now</a></li>
+        <li><b>Flappy Bird</b> <a href="https://play.unity.com/en/games/30acbf71-6761-4736-aadf-d38b99945ff1/flappy-bird" target="_blank">Play Now</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+</div>
+
+</body>
+</html>
